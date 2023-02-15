@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Kullanici {
+struct Kullanici: Identifiable {
     var id = UUID()
     var kullaniciAdi: String
     var adSoyad: String
