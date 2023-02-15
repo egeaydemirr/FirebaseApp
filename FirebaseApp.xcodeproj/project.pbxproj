@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		930A4CBA299CB98D0076417A /* DataCekme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930A4CB9299CB98D0076417A /* DataCekme.swift */; };
 		93F629FF299B906700DA688F /* FirebaseAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F629FE299B906700DA688F /* FirebaseAppApp.swift */; };
 		93F62A01299B906700DA688F /* FirebaseAppDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F62A00299B906700DA688F /* FirebaseAppDocument.swift */; };
 		93F62A03299B906700DA688F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F62A02299B906700DA688F /* ContentView.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		930A4CB9299CB98D0076417A /* DataCekme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCekme.swift; sourceTree = "<group>"; };
 		93F629FB299B906700DA688F /* FirebaseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93F629FE299B906700DA688F /* FirebaseAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAppApp.swift; sourceTree = "<group>"; };
 		93F62A00299B906700DA688F /* FirebaseAppDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAppDocument.swift; sourceTree = "<group>"; };
@@ -45,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		930A4CB8299CB3CA0076417A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				93F62A1A299BB0D400DA688F /* KullaniciModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		93F629F2299B906700DA688F = {
 			isa = PBXGroup;
 			children = (
@@ -65,13 +75,14 @@
 		93F629FD299B906700DA688F /* FirebaseApp */ = {
 			isa = PBXGroup;
 			children = (
+				930A4CB8299CB3CA0076417A /* Model */,
 				93F629FE299B906700DA688F /* FirebaseAppApp.swift */,
 				93F62A00299B906700DA688F /* FirebaseAppDocument.swift */,
 				93F62A02299B906700DA688F /* ContentView.swift */,
 				93F62A04299B906900DA688F /* Assets.xcassets */,
 				93F62A09299B906900DA688F /* Info.plist */,
 				93F62A06299B906900DA688F /* Preview Content */,
-				93F62A1A299BB0D400DA688F /* KullaniciModel.swift */,
+				930A4CB9299CB98D0076417A /* DataCekme.swift */,
 			);
 			path = FirebaseApp;
 			sourceTree = "<group>";
@@ -164,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				93F62A1B299BB0D400DA688F /* KullaniciModel.swift in Sources */,
+				930A4CBA299CB98D0076417A /* DataCekme.swift in Sources */,
 				93F629FF299B906700DA688F /* FirebaseAppApp.swift in Sources */,
 				93F62A01299B906700DA688F /* FirebaseAppDocument.swift in Sources */,
 				93F62A03299B906700DA688F /* ContentView.swift in Sources */,
