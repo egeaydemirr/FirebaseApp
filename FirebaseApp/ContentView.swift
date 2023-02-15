@@ -8,15 +8,43 @@
 import SwiftUI
 
 struct ContentView: View {
-    @Binding var document: FirebaseAppDocument
+    @ObservedObject var veriSinifi = veriModeli()
 
     var body: some View {
-        TextEditor(text: $document.text)
+        NavigationView(){
+            List(veriSinifi.kullanicilar){ item in
+                VStack {
+                    HStack{
+                        Spacer()
+                    Text("Ad Soyad:")
+                            .padding()
+                        Spacer()
+                        Text(item.adSoyad)
+                        Spacer()
+                    }
+                    HStack{
+                        Spacer()
+                    Text("Kullanici Adi:")
+
+                        Spacer()
+                        Text(item.kullaniciAdi)
+                        Spacer()
+                    }
+
+                }
+            }
+        }
+    }
+    
+    
+    init(){
+        veriSinifi.veriCekme()
     }
 }
 
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(document: .constant(FirebaseAppDocument()))
+        ContentView()
     }
 }
